@@ -4,24 +4,20 @@ import appointment from "../../../images/appointment.png";
 const Contact = () => {
   const contactFormStyle = {
     backgroundColor: "#41495C",
-    maxWidth: "75rem",
+    maxWidth: "80vw",
   };
 
   const imageBg = {
     backgroundImage: `url(${appointment})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    width: "75rem",
+    width: "80vw",
     height: "35rem",
     opacity: "0.1",
   };
 
-  const formMargin = {
-    margin: "4rem 15rem",
-  };
-
   return (
-    <section style={contactFormStyle} className="card my-5 border-0">
+    <section style={contactFormStyle} className="card mt-5 border-0">
       <div style={imageBg} className="card-img"></div>
 
       <div className="card-body card-img-overlay my-3">
@@ -32,7 +28,7 @@ const Contact = () => {
           <h3 className="card-title text-white">Stay Connected With Us</h3>
         </div>
 
-        <div style={formMargin}>
+        <div className="m-5">
           <div class="mb-3">
             <input
               type="email"
@@ -52,7 +48,7 @@ const Contact = () => {
             ></textarea>
           </div>
           <div className="text-center">
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="btn btn-primary btn-lg">
               Submit
             </button>
           </div>
